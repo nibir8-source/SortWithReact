@@ -14,7 +14,7 @@ function doMergeSort(startId, endId, mainArray, auxiliaryArray, animations){
   merge(startId,midId,endId,mainArray,auxiliaryArray,animations);
 }
 
-
+// This function create the animations array to store indexes of the array bars to be animated
 function merge(startId, midId, endId, mainArray, auxiliaryArray, animations){
     let i=startId,j=midId+1,k=startId;
     while(i<=midId && j<=endId){

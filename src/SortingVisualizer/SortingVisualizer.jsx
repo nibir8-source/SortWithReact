@@ -6,7 +6,7 @@ const SPEED = 4;
 
 const COL_1 = 'blue';
 
-const COL_2 = 'yellow';
+const COL_2 = 'red';
 
 export default class SortingVisualizer extends Component{
   constructor(props){
@@ -29,6 +29,7 @@ export default class SortingVisualizer extends Component{
     this.setState({array});
   }
 
+  // This function visualizes the animations
   mergeSort(){
     const animations = sortingAlgorithms.mergeSort(this.state.array.slice());
     for(let i=0; i<animations.length; i++){
